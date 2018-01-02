@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Профиль</title>
+    <link href="css/styleAut.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.2.4.js"
+            type="text/javascript"></script>
+    <script src="js/profileAjax.js" type="text/javascript"></script>
+    <title>Выбор упражнения</title>
+</head>
+<body>
+<div id="container_demo" >
+    <div id="wrapper">
+        <div id="subscribe" class="animate form">
+            <table width="100%" border="0">
+                <tbody>
+                <tr>
+                    <td width="30%"></td>
+                    <td width="40%" valign="center" align="center">
+                        <nav>
+                            <ul id="menu">
+                                <li><a href="Profile.html" class="current">Профиль</a></li>
+                                <li><a href="UprChoose.html">Выбор упражнения</a></li>
+                                <li><a href="States.html">Статистика</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td align="right" width="30%" class="faqDefault">
+                        <a href="FAQ.html"><img src="images/TP_Profile_1_7_FAQ.png" width="107" height="30" alt=""/></a>
+                    </td>
+                </tr>
+                <tr><td ></td>
+                    <td valign="center" align="center"><div id="auth-info">&nbsp;<br>&nbsp;</div></td>
+                    <td></td>
+                </tr>
+                <tr id="userData">
+                    <td width="30%" id="tdUpChoose" align="center">
+                            <h3>Данные</h3>
+                            <p>
+                                <label for="username" class="uname" data-icon="u" > Введите логин </label>
+                                <input id="username" name="username" required="required" type="text" placeholder="myusername"/>
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Введите пароль </label>
+                                <input id="password" name="password" required="required" type="password" placeholder="eg.X8df!90EO"/>
+                            </p>
+
+
+                    </td>
+                    <td width="40%"><h3 id="hello"></h3></td>
+                    <td width="30%" id="tdUpChoose">
+                        <table width="100%" border="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td width="9%">&nbsp;</td>
+                                <td width="91%">
+                                    <h3 class="tdUpChooseH3">Уровни сложности</h3>
+                                    <div class="radioUl">
+                                        <p><input name="isHard" type="radio" value="1" id="radio1">Новичок</p>
+                                        <p><input name="isHard" type="radio" value="2" id="radio2">Средний</p>
+                                        <p><input name="isHard" type="radio" value="3" id="radio3">Сложный</p>
+                                        <p><input name="isHard" type="radio" value="4" id="radio4">Профессионал</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td width="40%">
+                        <p class="dataChanged button">
+                            <input type="submit" value="Изменить данные" id="changeData"/>
+                        </p>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

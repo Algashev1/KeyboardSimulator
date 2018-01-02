@@ -1,0 +1,169 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Упражнение</title>
+	<link href="css/styleAut.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-2.2.4.js"
+			type="text/javascript"></script>
+	<script type="text/javascript" src="js/isVisibleKeyboard.js"></script>
+	<script src="js/uprAjax.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+</head>
+
+<body>
+	<div id="container_demo" >
+		<div id="wrapper">
+		<div id="subscribe" class="animate form">
+		 
+			<table width="100%" border="0">
+			  <tbody>
+				<tr>
+				  <td width="30%">&nbsp;</td>
+				  <td width="40%" valign="center" align="center">
+				  	<nav>
+				  		<ul id="menu">
+						 <li><a href="Profile.html">Профиль</a></li>
+						 <li><a href="UprChoose.html">Выбор упражнения</a></li>
+						 <li><a href="States.html">Статистика</a></li>
+					   </ul>
+				  	</nav>
+				  </td>
+				  <td align="right" width="30%" class="faqDefault">
+					<a href="FAQ.html"><img src="images/TP_Profile_1_7_FAQ.png"  alt=""/></a>
+				  </td>
+				</tr>
+			  </tbody>
+			</table>
+			<h3>Статистика прохождения</h3>
+
+			<table width="100%" border="0" cellpadding="0">
+		    <tbody>
+		      <tr>
+		        <td width="10%">&nbsp;</td>
+		        <td id="uprTop" height="40px">
+		        	
+		        	<table width="100%" border="0" cellpadding="0">
+					<tbody align="center" valign="top">
+					  <tr>
+						<td width=""><label id="error">Ошибки: 0/10</label></td>
+						<td width=""><label id="speed">Скорость: 0 зн/мин</label></td>
+						<td width=""><label id="time">Время: 0 сек</label></td>
+					  </tr>
+					</tbody>
+					</table>
+		        </td>		        
+		        <td width="10%">&nbsp;</td>
+	          </tr>
+			  <tr>
+				  <td>&nbsp;</td>
+				  <td id="uprLine" valign="center" align="center">
+					  <div  lang="ru" align="left" style="overflow:hidden;" id="read" ></div>
+				  </td>
+				  <td>&nbsp;</td>
+				  <td>&nbsp;</td>
+			  </tr>
+		      <tr>
+				  <td>&nbsp;</td>
+				  <td id="uprLine" valign="center" align="center">
+					<textarea style="overflow:hidden;" id="write" ></textarea>
+				  </td>
+				  <td>&nbsp;</td>
+				  <td>&nbsp;</td>
+	          </tr>
+		      <tr>
+		        <td>&nbsp;</td>
+		        <td height="300px">
+		        	
+		        	<div id="container">
+		        	<div id="mask"></div>
+					<ul id="keyboard">
+						<li class="letter" id="192">ё</li>
+						<li class="symbol" id="49"><span class="off">1</span><span class="on">!</span></li>
+						<li class="symbol" id="50"><span class="off">2</span><span class="on">"</span></li>
+						<li class="symbol" id="51"><span class="off">3</span><span class="on">№</span></li>
+						<li class="symbol" id="52"><span class="off">4</span><span class="on">;</span></li>
+						<li class="symbol" id="53"><span class="off">5</span><span class="on">%</span></li>
+						<li class="symbol" id="54"><span class="off">6</span><span class="on">:</span></li>
+						<li class="symbol" id="55"><span class="off">7</span><span class="on">?</span></li>
+						<li class="symbol" id="56"><span class="off">8</span><span class="on">*</span></li>
+						<li class="symbol" id="57"><span class="off">9</span><span class="on">(</span></li>
+						<li class="symbol" id="48"><span class="off">0</span><span class="on">)</span></li>
+						<li class="symbol" id="189"><span class="off">-</span><span class="on">_</span></li>
+						<li class="symbol" id="187"><span class="off">=</span><span class="on">+</span></li>
+						<li class="delete lastitem" id="8">delete</li>
+						<li class="tab" id="9">tab</li>
+						<li class="letter" id="81">й</li>
+						<li class="letter" id="87">ц</li>
+						<li class="letter" id="69">у</li>
+						<li class="letter" id="82">к</li>
+						<li class="letter" id="84">е</li>
+						<li class="letter" id="89">н</li>
+						<li class="letter" id="85">г</li>
+						<li class="letter" id="73">ш</li>
+						<li class="letter" id="79">щ</li>
+						<li class="letter" id="80">з</li>
+						<li class="letter" id="219">х</li>
+						<li class="letter" id="221">ъ</li>
+						<li class="symbol lastitem" id="220"><span class="off">\</span><span class="on">/</span></li>
+						<li class="capslock" id="20">caps lock</li>
+						<li class="letter" id="65">ф</li>
+						<li class="letter" id="83">ы</li>
+						<li class="letter" id="68">в</li>
+						<li class="letter" id="70">а</li>
+						<li class="letter" id="71">п</li>
+						<li class="letter" id="72">р</li>
+						<li class="letter" id="74">о</li>
+						<li class="letter" id="75">л</li>
+						<li class="letter" id="76">д</li>
+						<li class="letter" id="186">ж</li>
+						<li class="letter" id="222">э</li>
+						<li class="return lastitem" id="13">return</li>
+						<li class="left-shift 16">shift</li>
+						<li class="letter" id="90">я</li>
+						<li class="letter" id="88">ч</li>
+						<li class="letter" id="67">с</li>
+						<li class="letter" id="86">м</li>
+						<li class="letter" id="66">и</li>
+						<li class="letter" id="78">т</li>
+						<li class="letter" id="77">ь</li>
+						<li class="letter" id="188">б</li>
+						<li class="letter" id="190">ю</li>
+						<li class="symbol" id="191"><span class="off">.</span><span class="on">,</span></li>
+						<li class="right-shift lastitem 16">shift</li>
+						<li class="space lastitem" id="32">&nbsp;</li>
+					</ul>
+				</div>
+				<script type="text/javascript" src="js/keyboard.js"></script>
+        		
+	        </td>
+		        <td>&nbsp;</td>
+	          </tr>
+		      <tr>
+		        <td align="center" id="checkKeyboard">
+               	<input type="checkbox" id="checkboxKeyboard" class="check" name="checkbox" onChange="visibleKeyboard()">
+                <label for="checkbox" >Виртуальная клавиатура</label></td>
+		        <td id="uprEnd">
+		          <p class="levelChanged button">
+					<input type="button" value="Завершить упражнение" id="uprEndButton"/>
+				  </p>
+		        </td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+
+	</div>
+	</div>
+	</div>
+	<div id="modal_form">
+		<span id="modal_close">x</span>
+		<p><label id="fullTime"></label></p>
+		<p><label id="maxTime"></label></p>
+		<p><label id="minTime"></label></p>
+		<p><label id="speedNew"></label></p>
+		<p><label id="countError"></label></p>
+	</div>
+	<div id="overlay"></div>
+</body>
+</html>
+

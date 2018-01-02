@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Monitor">
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Resource name="jdbc/TestDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxActive="50"
+              maxIdle="30"
+              maxWait="10000"
+              username="root"
+              password="root"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/keyboardsimulator"/>
+</Context>

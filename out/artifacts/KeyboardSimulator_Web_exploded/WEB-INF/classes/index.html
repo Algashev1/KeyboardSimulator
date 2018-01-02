@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link href="css/styleAut.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
+    <script src="js/indexAjax.js"></script>
+</head>
+
+<body>
+<div id="container_demo" >
+    <div id="wrapper">
+        <div id="login" class="animate form">
+            <table width="100%" border="0">
+                <tbody>
+                <tr>
+                    <td width="20%">&nbsp;</td>
+                    <td width="50%" align="center">
+                            <h1>Авторизация</h1>
+                            <div id="auth-info" class="good_msg">&nbsp;</div>
+                            <p>
+                                <label for="username" class="uname" data-icon="u" > Введите логин </label>
+                                <br>
+                                <input id="username" name="username" required="required" type="text" placeholder="логин"/>
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Введите пароль </label><br>
+                                <input id="password" name="password" required="required" type="password" placeholder="пароль" />
+                            </p>
+                            <p class="login button">
+                                <input type="submit" value="Вход" id="logbutton"/>
+                            </p>
+                        <p class="reg button">
+                            <a href="Registration.html"><input type="submit" value="Регистрация" id="regbutton" onClick="regPage()"/></a>
+                            <script>
+                                function regPage()
+                                {
+                                    window.location = "Registration.html"
+                                }
+                            </script>
+                        </p>
+
+                    </td>
+                    <td width="20%">&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

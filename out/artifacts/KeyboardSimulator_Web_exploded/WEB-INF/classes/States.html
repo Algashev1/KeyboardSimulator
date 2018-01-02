@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Статистика</title>
+		<link href="css/styleAut.css" rel="stylesheet" type="text/css">
+		<script src="http://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js" type="text/javascript"></script>
+		<script src="js/statesView.js"></script>
+		<script src="js/statesAjax.js"></script>
+	</head>
+
+	<body>
+	<div id="container_demo" >
+		<div id="wrapper">
+			<div id="subscribe" class="animate form">
+				<table width="100%" border="0">
+					<tbody>
+					<tr>
+						<td width="30%">&nbsp;</td>
+						<td width="40%" valign="center" align="center">
+							<nav>
+								<ul id="menu">
+
+								</ul>
+							</nav>
+						</td>
+						<td align="right" width="30%" class="faqDefault">
+							<a href="FAQ.html"><img src="images/TP_Profile_1_7_FAQ.png" alt=""/></a>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table width="100%" border="0">
+					<tbody>
+					<tr>
+						<td rowspan="2" width="70%">
+							<div id="statesContainer" align="center">
+								<canvas id="popChart"></canvas>
+							</div>
+						</td>
+						<td rowspan="2" width="5%">&nbsp;</td>
+						<td width="25%"><h3 class="tdUpChooseH3">Вид отображения</h3>
+							<div class="radioUl">
+								<p><input name="isView" type="radio" value="graph" onClick="if (this.checked) {graphDrawing()}">График</p>
+								<p><input name="isView" type="radio" value="gistogramm" onClick="if (this.checked) {gistoDrawing()}">Гистограмма</p>
+								<p><input name="isView" type="radio" value="circle" onClick="if (this.checked) {circleDrawing()}">Круговая диаграмма</p>
+								<p><input name="isView" type="radio" value="table" onClick="if (this.checked) {tableBuild()}">Таблица</p>
+							</div></td>
+					</tr>
+					<tr>
+						<td width="25%"><h3 class="tdUpChooseH3">Временной период</h3>
+							<div class="radioUl">
+								<p><input name="isTime" type="radio" value=1 checked>День</p>
+								<p><input name="isTime" type="radio" value=7 >Неделя</p>
+								<p><input name="isTime" type="radio" value=30 >Месяц</p>
+								<p><input name="isTime" type="radio" value=365 >Год</p>
+								<p><input name="isTime" type="radio" value=365>За всё время</p>
+							</div></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
